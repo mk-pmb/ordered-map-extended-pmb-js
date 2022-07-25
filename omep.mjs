@@ -38,6 +38,7 @@ const extraApi = {
 
   upd(dict) {
     const map = this;
+    if (!dict) { return map; }
     Object.entries(dict).forEach(([k, v]) => map.set(k, v));
     return map;
   },
@@ -51,6 +52,7 @@ const extraApi = {
 
   weakUpd(dict) {
     const map = this;
+    if (!dict) { return map; }
     Object.entries(dict).forEach(([k, v]) => (map.has(k) || map.set(k, v)));
     return map;
   },

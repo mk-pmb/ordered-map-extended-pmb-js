@@ -46,6 +46,21 @@ const EX = [
   },
 
 
+  function copeWithFalseyUpdateDicts(t) {
+    t.plan(1);
+    const m = t.makeMap();
+    const falseys = [
+      undefined,
+      null,
+      false,
+      0,
+      '',
+    ];
+    falseys.forEach(d => m.upd(d).weakUpd(d));
+    t.same(m.toDict(), {});
+  },
+
+
 ];
 
 export default EX;
