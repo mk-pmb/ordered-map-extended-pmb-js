@@ -3,7 +3,7 @@
 import 'usnam-pmb';
 import pTapeAllInList from 'p-tape-all-in-list';
 
-import makeMap from '../omep.mjs';
+import makeMap from '../omep.js';
 
 import basicTests from './basics.mjs';
 

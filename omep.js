@@ -1,4 +1,5 @@
 // -*- coding: utf-8, tab-width: 2 -*-
+'use strict';
 
 const extraApi = {
 
@@ -80,5 +81,4 @@ Object.assign(EX, {
   extraApi,
 });
 
-
-export default EX;
+module.exports = EX;
