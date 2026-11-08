@@ -58,6 +58,14 @@ const extraApi = {
   },
 
 
+  setIfUndef(key, val) {
+    const map = this;
+    const had = map.get(key);
+    if (had === undefined) { map.set(key, val); }
+    return had;
+  },
+
+
 };
 
 

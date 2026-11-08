@@ -1,5 +1,5 @@
 { "name": "ordered-map-extended-pmb",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "JS Map on steroids.",
   "keywords": [],
 
@@ -17,20 +17,19 @@
   "private": false, "license": "ISC",
 
   "main": "omep.mjs",
-  "scripts": { "test": "elp && nodemjs test/all.mjs" },
+  "scripts": { "test": "elp && nodejs test/all.mjs" },
   "directories": { "test": "test" },
   "eslintConfig": { "extends": "nodejs-pmb" },
 
   "devDependencies": {
-    "eslint-config-nodejs-pmb": "^0.3.5",
+    "eslint-config-nodejs-pmb": "^0.3.14",
     "eslint-plugin-json-light-pmb": "^1.0.7",
-    "eslint-plugin-n": "^15.2.4",
-    "eslint-pretty-pmb": "^1.0.5",
-    "nodemjs": "^0.1.11",
-    "p-tape-all-in-list": "^0.1.0",
+    "eslint-plugin-n": "^17.16.2",
+    "eslint-pretty-pmb": "^1.0.7",
+    "p-tape-all-in-list": "^0.1.1",
     "usnam-pmb": "^0.2.5"
   },
 
 
-  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
+  "engines": { "npm": ">=7.0.0", "node": ">=24.0.0" }
 }

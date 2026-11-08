@@ -61,6 +61,21 @@ const EX = [
   },
 
 
+  function dupeCheck(t) {
+    t.plan(9);
+    const m = t.makeMap();
+    t.same(m.setIfUndef('firstFlower', 'poppy'), undefined);
+    t.same(m.setIfUndef('firstFlower', 'rose'), 'poppy');
+    t.same(m.setIfUndef('firstFlower', 'tulip'), 'poppy');
+    t.same(m.setIfUndef('firstFlower', 'orchid'), 'poppy');
+    t.same(m.setIfUndef('firstColor', 'white'), undefined);
+    t.same(m.setIfUndef('firstColor', 'blue'), 'white');
+    t.same(m.setIfUndef('firstColor', 'yellow'), 'white');
+    t.same(m.setIfUndef('firstColor', 'red'), 'white');
+    t.same(m.toDict(), { firstFlower: 'poppy', firstColor: 'white' });
+  },
+
+
 ];
 
 export default EX;

@@ -78,6 +78,14 @@ that value usually would be lost. For cases where you do need it,
 it is reported on the `.lostVal` property of the Error.
 
 
+### .setIfUndef(key, val)
+
+Return the previous value for `key`, potentially `undefined`.
+If it was `undefined`, set it to `val`.
+Useful for caching or for duplicate item checks.
+Similar to `.getOrInit` except you can distinguish whether you've
+already set the entry to `val` earlier. (Unless `val === undefined`.)
+
 
 
 
