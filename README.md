@@ -73,7 +73,7 @@ Asynchronous initialization can cause race conditions between multiple
 `.getOrInitPr` is (a)waiting.
 In that case, it will flinch and throw a race condition Error,
 which will thus be delivered as a rejected promise.
-Since it flinces from `.set()`ting its own (too late) initial value,
+Since it flinches from `.set()`ting its own (too late) initial value,
 that value usually would be lost. For cases where you do need it,
 it is reported on the `.lostVal` property of the Error.
 
